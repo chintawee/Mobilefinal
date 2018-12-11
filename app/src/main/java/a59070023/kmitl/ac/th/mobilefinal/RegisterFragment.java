@@ -55,6 +55,10 @@ public class RegisterFragment extends Fragment {
                 {
                     Toast.makeText(getActivity(),"ใส่ได้แค่ 6-12 ตัว", Toast.LENGTH_SHORT).show();
                 }
+                if (strPassword.length() <= 6)
+                {
+                    Toast.makeText(getActivity(),"ใส่ให้มากกว่า 6 ตัว", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
